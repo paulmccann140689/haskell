@@ -1,0 +1,18 @@
+? C:\Users\Apprentice\AppData\Local\Programs\stack\x86_64-windows\ghc-9.6.6\lib\x86_64-windows-ghc-9.6.6\rts-1.0.2\include\ghcversion.h
+: hash: 9032f6afc97dcddfe8c8b306639eb6f456e3f6667f3dd8268681f51bb77c8634
+C:\Users\Apprentice\Documents\solitaire_release_practice\.stack-work\dist\effaccc7\build\autogen\Paths_solitaire.hs:
+  hash: 9492b5462c62e516ea0abd9430f6f8a9a91da953227ab493cdb13bf4897d410e
+C:\Users\Apprentice\Documents\solitaire_release_practice\.stack-work\dist\effaccc7\build\autogen\cabal_macros.h:
+  hash: e19c1a56c19106f207bd159821d27b03fb997c567d20da0f67cb8c7abf9b9607
+C:\Users\Apprentice\Documents\solitaire_release_practice\package.yaml:
+  hash: aa324b7cf8a617858309ea29b3b1b30ac9e5aa953433e0cb5c6a301781cb24fe
+C:\Users\Apprentice\Documents\solitaire_release_practice\solitaire.cabal:
+  hash: eac9a910039bec76eccc60782309d5d5e4a4ea8e226ff614e029c98cd385f802
+C:\Users\Apprentice\Documents\solitaire_release_practice\src\CommandParser.hs:
+  hash: 4f51ba34bc3ccad06b082b89c98800e6903278e8f78541a706d75e6539de2ed6
+C:\Users\Apprentice\Documents\solitaire_release_practice\src\Deck.hs:
+  hash: 556ce0844bc5723729338de161bf064c4cff12d4b3d49acb701467544f92529b
+C:\Users\Apprentice\Documents\solitaire_release_practice\src\Error.hs:
+  hash: 333314131354141ceaadd0687de13f62cb5e7abc9f710874dc3114bfd76c0989
+C:\Users\Apprentice\Documents\solitaire_release_practice\src\Game.hs:
+  hash: 86a0ca77ed6ea55aa7f3634810cb357d6c64323f9a523b9770d6a94320bab55e
