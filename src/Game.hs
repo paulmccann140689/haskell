@@ -101,7 +101,6 @@ suitName Hearts   = "Hearts"
 suitName Diamonds = "Diamonds"
 
 
-
 -- This function displays the board
 padRight :: Int -> String -> String
 padRight n str = str ++ replicate (n - length str) ' '
@@ -111,7 +110,7 @@ showColumns board =
     let
         columns = sortBy (\c1 c2 -> compare (length c1) (length c2)) (boardColumns board)  -- Sort columns by height
         maxHeight = maximum (map length columns)  -- Find the height of the tallest column
-        headers = concatMap (\i -> padRight 7 $ "[" ++ show i ++ "]") [1 .. length columns]  -- Column headers
+        headers = concatMap (\i -> padRight 7 $ "[" ++ show i ++ "]") [0 .. length columns - 1]  -- Column headers
         rows = [generateRow r columns maxHeight | r <- [0 .. maxHeight - 1]]  -- Generate rows, starting from top to bottom
     in
         headers ++ "\n" ++ unlines rows
@@ -147,7 +146,7 @@ setup deck = MkBoard {
     }
     where
     (columnCards, remaniningDeck) = splitAt 28 deck
-    initialColumns = createColumns [1..7] columnCards
+    initialColumns = createColumns [0..6] columnCards
 
 createColumns :: [Int] -> [Card] -> [Column]
 createColumns [] _ = []
@@ -406,7 +405,7 @@ solve = solveHelper
 
 {- Scaffolding: This checks input indexes and calls the relevant functions -}
 checkStackIndex :: Int -> Either Error ()
-checkStackIndex x | x >= 1 && x <= 7 = return ()
+checkStackIndex x | x >= 0 && x <= 6 = return ()
                   | otherwise = Left InvalidStack
 
 
